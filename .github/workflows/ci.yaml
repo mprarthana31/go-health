@@ -19,7 +19,7 @@ jobs:
         run: go mod tidy && go mod download
 
       - name: Build
-        run: go build -v ./*.go
+        run: go build ./*.go
 
       - name: Vet
         run: go vet .
